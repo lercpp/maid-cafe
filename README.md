@@ -42,5 +42,54 @@
 - HTML5  
 - CSS3  
 - JavaScript
-- Python(библиотека: FastAPI)
+- SQLite
+- FastAPI
 
+## Как запустить
+
+1. Установите Python 3.10 или новее.
+2. Перейдите в папку проекта:
+
+```bash
+cd cafe
+```
+
+3. Создайте виртуальное окружение:
+
+```bash
+python -m venv .venv
+```
+
+4. Активируйте окружение.
+
+Windows:
+
+```bash
+.venv\Scripts\activate
+```
+
+macOS/Linux:
+
+```bash
+source .venv/bin/activate
+```
+
+5. Установите зависимости:
+
+```bash
+pip install -r requirements.txt
+```
+
+6. Запустите сервер:
+
+```bash
+uvicorn app.main:app --reload
+```
+
+7. Откройте сайт в браузере:
+
+```text
+http://127.0.0.1:8000
+```
+
+SQLite-файл `...` создаётся автоматически при первом запуске проекта.
