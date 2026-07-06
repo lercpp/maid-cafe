@@ -10,7 +10,3 @@ app.add_middleware(
     allow_methods=["*"], 
     allow_headers=["*"],
 )
-
-@app.get("/api/exo")
-def get_user():
-    return {"result":8}
